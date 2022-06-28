@@ -27,3 +27,9 @@
 #friday {
     display: none;
 }
+
+header {
+    background-image: url(image/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: 90%;
+}
