@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Cryman</title>
+</head>
+
+<body>
+    <header class="text-center p-3">
+        <h1>Cryman's Daily Routine</h1>
+        <h3 class="text-info">Date: <span id="date" class="text-dark"></span> </h3>
+        <h3 class="text-danger" id="clock" onload="currentTime()"></h3>
+        <h3 class="text-info"><span id="day" class="text-dark"></span> </h3>
+    </header>
+    <section class="py-3">
+        <div class="container text-center">
+            <button type="button" id="day1" class="btn btn-primary">Saturday</button>
+            <button type="button" id="day2" class="btn btn-secondary">Sunday</button>
+            <button type="button" id="day3" class="btn btn-success">Monday</button>
+            <button type="button" id="day4" class="btn btn-danger">Tuesday</button>
+            <button type="button" id="day5" class="btn btn-warning">Wednesday</button>
+            <button type="button" id="day6" class="btn btn-info">Thursday</button>
+            <button type="button" id="day7" class="btn btn-dark">Friday</button>
+        </div>
+    </section>
+    <section id="text">
+        <div class="container py-3">
+
+            <h3 id="demo"></h3>
+            <div class="text-center">
+                <h3 class="btn btn-warning" onclick="typeWriter()">তাজবিদ আগে এইটা চাপ </h3>
+            </div>
+
+        </div>
+    </section>
+    <section id="saturday">
+        <div class="container">
+            <h1 class="text-center">Saturday</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Subject</th>
+
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">3.30-4.30</th>
+                        <td>Home Work</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4.30-5.15</th>
+                        <td>Home Work / Math</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5.15-5.30</th>
+                        <td>Namaj Break</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5.30-6.30</th>
+                        <td>Game Time</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6.30-7.00</th>
+                        <td>Namaj & Snack </td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7.00-9.00</th>
+                        <td>Math / English / Science</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9.00-9.45</th>
+                        <td>Namaj & Dinner</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9.45-12.00</th>
+                        <td>Others Subject</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="sunday">
+        <div class="container">
+            <h1 class="text-center">Sunday</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Subject</th>
+
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">3.30-4.30</th>
+                        <td>Home Work</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4.30-5.15</th>
+                        <td>Home Work / Math</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5.15-5.30</th>
+                        <td>Namaj Break</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5.30-6.30</th>
+                        <td>Game Time</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6.30-7.00</th>
+                        <td>Namaj & Snack </td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7.00-9.00</th>
+                        <td>Math / English / Science</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9.00-9.45</th>
+                        <td>Namaj & Dinner</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9.45-12.00</th>
+                        <td>Others Subject</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="monday">
+        <div class="container">
+            <h1 class="text-center">Monday</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Subject</th>
+
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">3.30-4.30</th>
+                        <td>Home Work</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4.30-5.15</th>
+                        <td>Home Work / Math</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5.15-5.30</th>
+                        <td>Namaj Break</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5.30-6.30</th>
+                        <td>Game Time</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6.30-7.00</th>
+                        <td>Namaj & Snack </td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7.00-9.00</th>
+                        <td>Math / English / Science</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9.00-9.45</th>
+                        <td>Namaj & Dinner</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9.45-12.00</th>
+                        <td>Others Subject</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="tuesday">
+        <div class="container">
+            <h1 class="text-center">Tuesday</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Subject</th>
+
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">3.30-4.30</th>
+                        <td>Home Work</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4.30-5.15</th>
+                        <td>Home Work / Math</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5.15-5.30</th>
+                        <td>Namaj Break</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5.30-6.30</th>
+                        <td>Game Time</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6.30-7.00</th>
+                        <td>Namaj & Snack </td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7.00-9.00</th>
+                        <td>Math / English / Science</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9.00-9.45</th>
+                        <td>Namaj & Dinner</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9.45-12.00</th>
+                        <td>Others Subject</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="wednesday">
+        <div class="container">
+            <h1 class="text-center">Wednesday</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Subject</th>
+
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">3.30-4.30</th>
+                        <td>Home Work</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4.30-5.15</th>
+                        <td>Home Work / Math</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5.15-5.30</th>
+                        <td>Namaj Break</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5.30-6.30</th>
+                        <td>Game Time</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6.30-7.00</th>
+                        <td>Namaj & Snack </td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7.00-9.00</th>
+                        <td>Math / English / Science</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9.00-9.45</th>
+                        <td>Namaj & Dinner</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9.45-12.00</th>
+                        <td>Others Subject</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="thursday">
+        <div class="container">
+            <h1 class="text-center">Thursday</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Subject</th>
+
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">3.30-4.30</th>
+                        <td>Home Work</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4.30-5.15</th>
+                        <td>Home Work / Math</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5.15-5.30</th>
+                        <td>Namaj Break</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5.30-6.30</th>
+                        <td>Game Time</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6.30-7.00</th>
+                        <td>Namaj & Snack </td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7.00-9.00</th>
+                        <td>Math / English / Science</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9.00-9.45</th>
+                        <td>Namaj & Dinner</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9.45-12.00</th>
+                        <td>Others Subject</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="friday">
+        <div class="container">
+            <h1 class="text-center">Friday</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Subject</th>
+
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">3.30-4.30</th>
+                        <td>Home Work</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4.30-5.15</th>
+                        <td>Home Work / Math</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5.15-5.30</th>
+                        <td>Namaj Break</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5.30-6.30</th>
+                        <td>Game Time</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6.30-7.00</th>
+                        <td>Namaj & Snack </td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7.00-9.00</th>
+                        <td>Math / English / Science</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9.00-9.45</th>
+                        <td>Namaj & Dinner</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9.45-12.00</th>
+                        <td>Others Subject</td>
+
+                        <td> <span class="btn btn-success">Done</span></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer class="bg-dark">
+        <div class="container text-light p-3 text-center">
+            <p>Copy right @ <a href="https://www.roctim.icu/">#RT17</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
