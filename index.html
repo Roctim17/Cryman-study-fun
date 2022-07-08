@@ -14,21 +14,52 @@
 </head>
 
 <body>
+    <section class="py-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="/">My Day's</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav  ms-auto">
+                        <li class="nav-item pe-3">
+                            <button type="button" id="day1" class="btn btn-primary">Saturday</button>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <button type="button" id="day2" class="btn btn-secondary">Sunday</button>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <button type="button" id="day3" class="btn btn-success">Monday</button>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <button type="button" id="day4" class="btn btn-danger">Tuesday</button>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <button type="button" id="day5" class="btn btn-warning">Wednesday</button>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <button type="button" id="day6" class="btn btn-info">Thursday</button>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <button type="button" id="day7" class="btn btn-dark">Friday</button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
     <header class="text-center p-3">
         <h1>Cryman's Daily Routine</h1>
         <h3 class="text-info">Date: <span id="date" class="text-dark"></span> </h3>
         <h3 class="text-danger" id="clock" onload="currentTime()"></h3>
         <h3 class="text-info"><span id="day" class="text-dark"></span> </h3>
     </header>
-    <section class="py-3">
-        <div class="container text-center">
-            <button type="button" id="day1" class="btn btn-primary">Saturday</button>
-            <button type="button" id="day2" class="btn btn-secondary">Sunday</button>
-            <button type="button" id="day3" class="btn btn-success">Monday</button>
-            <button type="button" id="day4" class="btn btn-danger">Tuesday</button>
-            <button type="button" id="day5" class="btn btn-warning">Wednesday</button>
-            <button type="button" id="day6" class="btn btn-info">Thursday</button>
-            <button type="button" id="day7" class="btn btn-dark">Friday</button>
+    <section>
+        <div class="text-center">
+            <a href="http://todo-list-b089a.web.app" class="btn btn-warning m-auto">List your study</a>
         </div>
     </section>
     <section id="text">
